@@ -18,20 +18,23 @@
 ### 设计亮点
 
 - ✅ **响应式设计**：完美适配桌面、平板、手机
-- ✅ **专业配色**：采用蓝色系专业配色，体现科技感与可信度
+- ✅ **冷色调配色**：科技蓝+青色，专业清爽
 - ✅ **清晰分类**：技术文章按类型分类，资讯按法规/监管分类
 - ✅ **交互友好**：平滑滚动、卡片悬停效果、标签切换
 - ✅ **无障碍支持**：键盘导航、焦点样式、语义化标签
 - ✅ **性能优化**：CSS动画、懒加载、防抖处理
+- ✅ **鸿蒙WebView**：完美支持鸿蒙手机浏览器
 
 ## 📁 文件结构
 
 ```
 content-security-website/
-├── index.html      # 主页面
-├── styles.css      # 样式文件
-├── script.js       # 交互脚本
-└── README.md       # 说明文档
+├── index.html           # 主页面
+├── styles.css           # 样式文件
+├── script.js            # 交互脚本
+├── update-content.sh    # 自动更新脚本
+├── setup-cron.sh        # 定时任务设置脚本
+└── README.md            # 说明文档
 ```
 
 ## 🚀 快速开始
@@ -57,49 +60,55 @@ content-security-website/
 
 ### 部署上线
 
-#### 方式一：静态托管平台
+网站已部署到 GitHub Pages：
+**https://h55694.github.io/content-security-website/**
 
-**Vercel**（推荐）
+## 🔄 自动更新
+
+### 设置每月自动更新
+
+运行以下命令设置定时任务：
+
 ```bash
-npm install -g vercel
-vercel
+./setup-cron.sh
 ```
 
-**Netlify**
+这将创建一个每月1号凌晨2点自动运行的定时任务，搜索最新内容并生成更新报告。
+
+### 手动更新
+
 ```bash
-npm install -g netlify-cli
-netlify deploy
+./update-content.sh
 ```
 
-**GitHub Pages**
-1. 创建 GitHub 仓库
-2. 上传文件到仓库
-3. Settings → Pages → 选择分支 → Deploy
+### 更新流程
 
-#### 方式二：传统服务器
-
-将文件上传到服务器的 Web 目录（如 `/var/www/html/`）
+1. **自动搜索**：脚本自动搜索最新技术和资讯内容
+2. **生成报告**：生成更新报告到 `/tmp/update_report.md`
+3. **人工审核**：审核搜索结果，筛选高质量内容
+4. **更新网站**：更新 `index.html` 文件
+5. **推送发布**：提交并推送到 GitHub
 
 ## 🎨 设计系统
 
-### 颜色系统
+### 颜色系统（冷色调 - 双色原则）
 
 ```css
 /* 主色 */
---color-primary: #2563eb;      /* 专业蓝 */
---color-secondary: #7c3aed;    /* 科技紫 */
+--color-primary: #3b82f6;      /* 科技蓝 */
+--color-secondary: #06b6d4;    /* 青色 */
 
 /* 分类色 */
---color-frontier: #8b5cf6;     /* 前沿技术 - 紫色 */
---color-adversarial: #ef4444;  /* 对抗技术 - 红色 */
---color-ai: #3b82f6;           /* AI技术 - 蓝色 */
---color-laws: #10b981;         /* 法律法规 - 绿色 */
---color-regulation: #f59e0b;   /* 监管动向 - 橙色 */
+--color-frontier: #3b82f6;     /* 前沿技术 - 蓝色 */
+--color-adversarial: #06b6d4;  /* 对抗技术 - 青色 */
+--color-ai: #8b5cf6;           /* AI技术 - 紫色 */
+--color-laws: #3b82f6;         /* 法律法规 - 蓝色 */
+--color-regulation: #06b6d4;   /* 监管动向 - 青色 */
 ```
 
 ### 间距系统
 
-采用非线性间距系统：`4, 8, 12, 16, 24, 32, 48, 64, 96, 128px`
+采用非线性间距系统：`4, 8, 12, 16, 24, 32, 48, 64, 96px`
 
 ### 字体系统
 
@@ -128,7 +137,6 @@ netlify deploy
 
 - **文章内容**：修改 `.article-card` 元素
 - **新闻内容**：修改 `.news-item` 元素
-- **统计数据**：修改 `.hero-stats` 部分
 
 ### 修改样式
 
@@ -174,14 +182,21 @@ netlify deploy
 - [ ] 优化 meta 标签
 - [ ] 添加 Open Graph 标签
 
+## 📅 维护计划
+
+- **每月1日**：自动搜索最新内容
+- **每月5日前**：人工审核并更新网站
+- **每季度**：检查并优化网站性能
+- **每年**：更新设计系统和功能
+
 ## 📄 许可证
 
 MIT License
 
 ## 👥 联系方式
 
-- 📧 Email: contact@contentsec.cn
-- 📍 地址: 北京市海淀区
+- 📧 Email: h00286006@gmail.com
+- 📍 地址: 深圳，中国
 
 ---
 
