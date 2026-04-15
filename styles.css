@@ -853,6 +853,29 @@ button {
 }
 
 /* ========================================
+   归档页面样式
+   ======================================== */
+
+.archive-header {
+    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+    color: var(--text-inverse);
+    padding: var(--spacing-3xl) 0;
+    text-align: center;
+}
+
+.archive-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-base);
+}
+
+.archive-desc {
+    font-size: var(--font-size-lg);
+    opacity: 0.95;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* ========================================
    响应式设计 - 移动端和鸿蒙WebView优化
    ======================================== */
 
