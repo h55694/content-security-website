@@ -388,6 +388,14 @@ button {
     background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
 }
 
+.card-image.laws {
+    background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+}
+
+.card-image.regulation {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+}
+
 .card-content {
     padding: var(--spacing-lg);
 }
@@ -414,6 +422,16 @@ button {
 .card-tag.ai {
     background-color: #fef3c7;
     color: #d97706;
+}
+
+.card-tag.laws {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+
+.card-tag.regulation {
+    background-color: #fee2e2;
+    color: #dc2626;
 }
 
 .card-title {
