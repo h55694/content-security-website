@@ -3,13 +3,16 @@
    ======================================== */
 
 :root {
-    /* 颜色系统 */
-    --color-primary: #2563eb;
-    --color-primary-dark: #1e40af;
-    --color-primary-light: #3b82f6;
+    /* 暖色主色调系统（三色原则） */
+    --color-primary: #f97316;        /* 活力橙 */
+    --color-primary-dark: #ea580c;   /* 深橙 */
+    --color-primary-light: #fb923c;  /* 浅橙 */
     
-    --color-secondary: #7c3aed;
-    --color-secondary-dark: #6d28d9;
+    --color-secondary: #ef4444;      /* 热情红 */
+    --color-secondary-dark: #dc2626; /* 深红 */
+    
+    --color-accent: #fbbf24;         /* 温暖黄 */
+    --color-accent-dark: #f59e0b;    /* 深黄 */
     
     /* 语义颜色 */
     --color-success: #10b981;
@@ -17,34 +20,34 @@
     --color-error: #ef4444;
     
     /* 中性色 */
-    --color-gray-50: #f9fafb;
-    --color-gray-100: #f3f4f6;
-    --color-gray-200: #e5e7eb;
-    --color-gray-300: #d1d5db;
-    --color-gray-400: #9ca3af;
-    --color-gray-500: #6b7280;
-    --color-gray-600: #4b5563;
-    --color-gray-700: #374151;
-    --color-gray-800: #1f2937;
-    --color-gray-900: #111827;
+    --color-gray-50: #fffbeb;
+    --color-gray-100: #fef3c7;
+    --color-gray-200: #fde68a;
+    --color-gray-300: #fcd34d;
+    --color-gray-400: #fbbf24;
+    --color-gray-500: #f59e0b;
+    --color-gray-600: #d97706;
+    --color-gray-700: #b45309;
+    --color-gray-800: #92400e;
+    --color-gray-900: #78350f;
     
     /* 背景色 */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f9fafb;
-    --bg-tertiary: #f3f4f6;
+    --bg-primary: #fffbf5;
+    --bg-secondary: #fff8f0;
+    --bg-tertiary: #fef3e8;
     
     /* 文本色 */
-    --text-primary: #111827;
-    --text-secondary: #4b5563;
-    --text-tertiary: #6b7280;
+    --text-primary: #78350f;
+    --text-secondary: #92400e;
+    --text-tertiary: #b45309;
     --text-inverse: #ffffff;
     
-    /* 分类颜色 */
-    --color-frontier: #8b5cf6;
-    --color-adversarial: #ef4444;
-    --color-ai: #3b82f6;
-    --color-laws: #10b981;
-    --color-regulation: #f59e0b;
+    /* 分类颜色（暖色系） */
+    --color-frontier: #f97316;       /* 前沿技术 - 橙色 */
+    --color-adversarial: #ef4444;    /* 对抗技术 - 红色 */
+    --color-ai: #f59e0b;             /* AI技术 - 黄色 */
+    --color-laws: #ea580c;           /* 法律法规 - 深橙 */
+    --color-regulation: #dc2626;     /* 监管动向 - 深红 */
     
     /* 间距系统 */
     --spacing-xs: 4px;
@@ -230,7 +233,7 @@ button {
    ======================================== */
 
 .hero {
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    background: linear-gradient(135deg, #f97316 0%, #ef4444 50%, #fbbf24 100%);
     color: var(--text-inverse);
     padding: var(--spacing-2xl) 0;
     text-align: center;
@@ -374,15 +377,15 @@ button {
 }
 
 .card-image.frontier {
-    background: linear-gradient(135deg, var(--color-frontier) 0%, #a78bfa 100%);
+    background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
 }
 
 .card-image.adversarial {
-    background: linear-gradient(135deg, var(--color-adversarial) 0%, #f87171 100%);
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
 }
 
 .card-image.ai {
-    background: linear-gradient(135deg, var(--color-ai) 0%, #60a5fa 100%);
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
 }
 
 .card-content {
@@ -399,18 +402,18 @@ button {
 }
 
 .card-tag.frontier {
-    background-color: #ede9fe;
-    color: var(--color-frontier);
+    background-color: #ffedd5;
+    color: #ea580c;
 }
 
 .card-tag.adversarial {
     background-color: #fee2e2;
-    color: var(--color-adversarial);
+    color: #dc2626;
 }
 
 .card-tag.ai {
-    background-color: #dbeafe;
-    color: var(--color-ai);
+    background-color: #fef3c7;
+    color: #d97706;
 }
 
 .card-title {
@@ -550,13 +553,13 @@ button {
     height: 80px;
     background: var(--bg-primary);
     border-radius: var(--radius-base);
-    border: 2px solid var(--color-primary);
+    border: 2px solid #f97316;
 }
 
 .date-day {
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
+    color: #f97316;
     line-height: 1;
 }
 
@@ -574,15 +577,15 @@ button {
     padding: var(--spacing-xs) var(--spacing-sm);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
-    background-color: #d1fae5;
-    color: var(--color-laws);
+    background-color: #ffedd5;
+    color: #ea580c;
     border-radius: var(--radius-sm);
     margin-bottom: var(--spacing-sm);
 }
 
 .news-tag.regulation {
-    background-color: #fef3c7;
-    color: var(--color-regulation);
+    background-color: #fee2e2;
+    color: #dc2626;
 }
 
 .news-title {
@@ -776,7 +779,7 @@ button {
    ======================================== */
 
 .footer {
-    background-color: var(--color-gray-900);
+    background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
     color: var(--text-inverse);
     padding: var(--spacing-3xl) 0 var(--spacing-lg);
 }
