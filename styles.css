@@ -531,11 +531,13 @@ button {
     background: var(--bg-secondary);
     border-radius: var(--radius-lg);
     transition: all var(--transition-fast);
+    cursor: pointer;
 }
 
 .news-item:hover {
     background: var(--bg-tertiary);
     transform: translateX(4px);
+    box-shadow: var(--shadow-md);
 }
 
 .news-date {
