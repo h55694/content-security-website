@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容安全内参 - 专业内容安全技术与资讯平台</title>
+    <meta name="description" content="内容安全内参：前沿技术洞察、对抗技术分析、AI技术应用、法律法规解读、监管动向追踪">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🛡️</span>
+                <span class="logo-text">内容安全内参</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#tech" class="nav-link">技术洞察</a></li>
+                <li><a href="#news" class="nav-link">安全资讯</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">内容安全内参</h1>
+            <p class="hero-subtitle">专注内容安全领域，洞察前沿技术，追踪监管动态</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">技术文章</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">法规解读</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">专业读者</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术洞察版块 -->
+    <section id="tech" class="section tech-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">内容安全技术洞察</h2>
+                <p class="section-desc">深度解析前沿技术、对抗策略与AI应用</p>
+            </div>
+            
+            <div class="tech-categories">
+                <button class="category-btn active" data-category="all">全部</button>
+                <button class="category-btn" data-category="frontier">前沿技术</button>
+                <button class="category-btn" data-category="adversarial">对抗技术</button>
+                <button class="category-btn" data-category="ai">AI技术</button>
+            </div>
+
+            <div class="articles-grid">
+                <!-- 前沿技术 -->
+                <article class="article-card" data-category="frontier">
+                    <div class="card-image frontier">
+                        <span class="card-icon">🔬</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag frontier">前沿技术</span>
+                        <h3 class="card-title">多模态内容理解技术最新进展</h3>
+                        <p class="card-excerpt">深度解析跨模态内容识别技术，包括图文融合、视频理解等前沿方向...</p>
+                        <div class="card-meta">
+                            <span class="meta-date">2026-04-15</span>
+                            <span class="meta-views">👁️ 2.3K</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 对抗技术 -->
+                <article class="article-card" data-category="adversarial">
+                    <div class="card-image adversarial">
+                        <span class="card-icon">⚔️</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag adversarial">对抗技术</span>
+                        <h3 class="card-title">深度伪造检测对抗攻防实战</h3>
+                        <p class="card-excerpt">分析最新Deepfake检测技术的绕过手段，以及防御方的应对策略...</p>
+                        <div class="card-meta">
+                            <span class="meta-date">2026-04-14</span>
+                            <span class="meta-views">👁️ 3.1K</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AI技术 -->
+                <article class="article-card" data-category="ai">
+                    <div class="card-image ai">
+                        <span class="card-icon">🤖</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag ai">AI技术</span>
+                        <h3 class="card-title">大模型内容安全对齐技术综述</h3>
+                        <p class="card-excerpt">探讨RLHF、Constitutional AI等大模型安全对齐方法及实践案例...</p>
+                        <div class="card-meta">
+                            <span class="meta-date">2026-04-13</span>
+                            <span class="meta-views">👁️ 4.5K</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 前沿技术 -->
+                <article class="article-card" data-category="frontier">
+                    <div class="card-image frontier">
+                        <span class="card-icon">🔬</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag frontier">前沿技术</span>
+                        <h3 class="card-title">实时内容审核系统架构设计</h3>
+                        <p class="card-excerpt">高并发场景下的实时审核系统设计，平衡准确率与响应速度...</p>
+                        <div class="card-meta">
+                            <span class="meta-date">2026-04-12</span>
+                            <span class="meta-views">👁️ 1.8K</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 对抗技术 -->
+                <article class="article-card" data-category="adversarial">
+                    <div class="card-image adversarial">
+                        <span class="card-icon">⚔️</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag adversarial">对抗技术</span>
+                        <h3 class="card-title">对抗样本攻击与防御技术演进</h3>
+                        <p class="card-excerpt">从FGSM到AutoAttack，对抗样本技术的发展脉络与防御思路...</p>
+                        <div class="card-meta">
+                            <span class="meta-date">2026-04-11</span>
+                            <span class="meta-views">👁️ 2.7K</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AI技术 -->
+                <article class="article-card" data-category="ai">
+                    <div class="card-image ai">
+                        <span class="card-icon">🤖</span>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-tag ai">AI技术</span>
+                        <h3 class="card-title">多模态AI内容生成检测技术</h3>
+                        <p class="card-excerpt">AIGC内容检测技术综述，包括图像、视频、音频生成内容的识别方法...</p>
+                        <div class="card-meta">
+                            <span class="meta-date">2026-04-10</span>
+                            <span class="meta-views">👁️ 3.9K</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more">
+                <button class="btn btn-primary">查看更多技术文章</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 安全资讯版块 -->
+    <section id="news" class="section news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">内容安全资讯</h2>
+                <p class="section-desc">最新法律法规、监管动向与行业动态</p>
+            </div>
+
+            <div class="news-tabs">
+                <button class="tab-btn active" data-tab="laws">法律法规</button>
+                <button class="tab-btn" data-tab="regulation">监管动向</button>
+            </div>
+
+            <div class="news-content">
+                <!-- 法律法规 -->
+                <div class="news-panel active" id="laws-panel">
+                    <div class="news-list">
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="date-day">15</span>
+                                <span class="date-month">2026-04</span>
+                            </div>
+                            <div class="news-content-wrapper">
+                                <span class="news-tag">新发布</span>
+                                <h3 class="news-title">《生成式人工智能服务管理办法》正式发布</h3>
+                                <p class="news-excerpt">国家网信办等七部门联合发布《生成式人工智能服务管理办法》，对AIGC服务提供者提出明确要求...</p>
+                                <a href="#" class="news-link">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="date-day">12</span>
+                                <span class="date-month">2026-04</span>
+                            </div>
+                            <div class="news-content-wrapper">
+                                <span class="news-tag">解读</span>
+                                <h3 class="news-title">《网络暴力信息治理规定》要点解读</h3>
+                                <p class="news-excerpt">深度解读网络暴力信息治理新规，分析平台责任边界与合规要点...</p>
+                                <a href="#" class="news-link">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="date-day">08</span>
+                                <span class="date-month">2026-04</span>
+                            </div>
+                            <div class="news-content-wrapper">
+                                <span class="news-tag">修订</span>
+                                <h3 class="news-title">《网络安全法》修订草案公开征求意见</h3>
+                                <p class="news-excerpt">修订草案强化了平台内容审核责任，新增算法推荐服务相关条款...</p>
+                                <a href="#" class="news-link">阅读全文 →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 监管动向 -->
+                <div class="news-panel" id="regulation-panel">
+                    <div class="news-list">
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="date-day">14</span>
+                                <span class="date-month">2026-04</span>
+                            </div>
+                            <div class="news-content-wrapper">
+                                <span class="news-tag regulation">执法</span>
+                                <h3 class="news-title">网信部门开展"清朗·2026"专项行动</h3>
+                                <p class="news-excerpt">重点整治虚假信息、网络暴力、未成年人网络环境等问题，多家平台被约谈...</p>
+                                <a href="#" class="news-link">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="date-day">10</span>
+                                <span class="date-month">2026-04</span>
+                            </div>
+                            <div class="news-content-wrapper">
+                                <span class="news-tag regulation">政策</span>
+                                <h3 class="news-title">工信部发布算法备案新规实施细则</h3>
+                                <p class="news-excerpt">明确算法备案流程、材料要求及审核标准，强化算法透明度监管...</p>
+                                <a href="#" class="news-link">阅读全文 →</a>
+                            </div>
+                        </article>
+
+                        <article class="news-item">
+                            <div class="news-date">
+                                <span class="date-day">06</span>
+                                <span class="date-month">2026-04</span>
+                            </div>
+                            <div class="news-content-wrapper">
+                                <span class="news-tag regulation">案例</span>
+                                <h3 class="news-title">某短视频平台因内容审核不力被处罚</h3>
+                                <p class="news-excerpt">因未及时处置违法信息，被处以罚款并责令整改，内容安全团队建设成重点...</p>
+                                <a href="#" class="news-link">阅读全文 →</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more">
+                <button class="btn btn-secondary">查看更多资讯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 订阅区域 -->
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2 class="subscribe-title">订阅内容安全内参</h2>
+                <p class="subscribe-desc">每周获取最新技术洞察与监管动态，与10,000+专业人士共同成长</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="请输入您的邮箱" class="email-input" required>
+                    <button type="submit" class="btn btn-subscribe">立即订阅</button>
+                </form>
+                <p class="subscribe-note">我们尊重您的隐私，绝不发送垃圾邮件</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">关于内容安全内参</h2>
+                <p class="about-text">
+                    内容安全内参是一个专注于内容安全领域的专业平台，致力于为从业者提供前沿技术洞察、
+                    对抗技术分析、AI应用实践，以及最新的法律法规解读和监管动向追踪。
+                </p>
+                <p class="about-text">
+                    我们汇聚行业专家智慧，深度剖析技术趋势，助力企业构建完善的内容安全体系，
+                    推动行业健康发展。
+                </p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">📚</span>
+                        <h3>专业深度</h3>
+                        <p>技术文章由行业专家撰写，确保内容专业可靠</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <h3>及时更新</h3>
+                        <p>第一时间追踪监管动态，解读最新政策法规</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎯</span>
+                        <h3>实战导向</h3>
+                        <p>聚焦实际应用场景，提供可落地的解决方案</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">内容安全内参</h3>
+                    <p class="footer-desc">专注内容安全，守护网络空间</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">快速链接</h4>
+                    <ul class="footer-links">
+                        <li><a href="#tech">技术洞察</a></li>
+                        <li><a href="#news">安全资讯</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">联系方式</h4>
+                    <ul class="footer-links">
+                        <li>📧 contact@contentsec.cn</li>
+                        <li>📍 北京市海淀区</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 内容安全内参. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
