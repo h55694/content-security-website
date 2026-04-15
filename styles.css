@@ -232,7 +232,7 @@ button {
 .hero {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     color: var(--text-inverse);
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-2xl) 0;
     text-align: center;
 }
 
@@ -250,12 +250,10 @@ button {
 }
 
 .hero-subtitle {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     opacity: 0.95;
-    margin-bottom: var(--spacing-3xl);
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .hero-stats {
