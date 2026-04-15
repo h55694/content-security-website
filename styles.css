@@ -469,10 +469,12 @@ button {
     color: var(--color-primary);
     font-weight: var(--font-weight-medium);
     transition: color var(--transition-fast);
+    text-decoration: none;
 }
 
-.article-card:hover .meta-link {
+.meta-link:hover {
     color: var(--color-primary-dark);
+    text-decoration: underline;
 }
 
 /* ========================================
