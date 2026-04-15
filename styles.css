@@ -603,6 +603,110 @@ button {
     color: #dc2626;
 }
 
+/* ========================================
+   法律法规版块
+   ======================================== */
+
+.laws-section {
+    background-color: var(--bg-primary);
+}
+
+.laws-tabs {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-base);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.laws-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.laws-panel {
+    display: none;
+}
+
+.laws-panel.active {
+    display: block;
+}
+
+.laws-categories {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.laws-category-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-primary);
+    margin: var(--spacing-xl) 0 var(--spacing-base);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.laws-category-title:first-child {
+    margin-top: 0;
+}
+
+.laws-list-compact {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.law-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-base);
+    padding: var(--spacing-base);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-base);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.law-item:hover {
+    background: var(--bg-tertiary);
+    transform: translateX(4px);
+    box-shadow: var(--shadow-sm);
+}
+
+.law-icon {
+    font-size: var(--font-size-xl);
+    flex-shrink: 0;
+}
+
+.law-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.law-title {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.law-meta {
+    font-size: var(--font-size-xs);
+    color: var(--text-tertiary);
+}
+
+.law-arrow {
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+    transition: transform var(--transition-fast);
+}
+
+.law-item:hover .law-arrow {
+    transform: translateX(4px);
+}
+
 .news-title {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);

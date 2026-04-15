@@ -53,23 +53,38 @@ document.addEventListener('DOMContentLoaded', function() {
     // 资讯标签切换
     const tabBtns = document.querySelectorAll('.tab-btn');
     const newsPanels = document.querySelectorAll('.news-panel');
+    const lawsPanels = document.querySelectorAll('.laws-panel');
 
     tabBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             // 更新标签状态
-            tabBtns.forEach(b => b.classList.remove('active'));
+            const parent = this.closest('.news-tabs, .laws-tabs');
+            parent.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
             this.classList.add('active');
 
             const tab = this.dataset.tab;
 
-            // 切换面板
-            newsPanels.forEach(panel => {
-                if (panel.id === `${tab}-panel`) {
-                    panel.classList.add('active');
-                } else {
-                    panel.classList.remove('active');
-                }
-            });
+            // 切换资讯面板
+            if (newsPanels.length > 0) {
+                newsPanels.forEach(panel => {
+                    if (panel.id === `${tab}-panel`) {
+                        panel.classList.add('active');
+                    } else {
+                        panel.classList.remove('active');
+                    }
+                });
+            }
+
+            // 切换法律法规面板
+            if (lawsPanels.length > 0) {
+                lawsPanels.forEach(panel => {
+                    if (panel.id === `${tab}-panel`) {
+                        panel.classList.add('active');
+                    } else {
+                        panel.classList.remove('active');
+                    }
+                });
+            }
         });
     });
 
